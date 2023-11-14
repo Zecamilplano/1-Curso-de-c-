@@ -6,15 +6,18 @@
 using namespace std;
 
 int main() {
-  int a;
-  int b;
+  int a, b, c;
 
   cout << "Valor de A ";
   cin >> a;
   cout << "Valor de B ";
   cin >> b;
 
-  cout << "O valor de A é " << b << endl;
-  cout << "E o valor de B é " << a << endl;
+  c = a;
+  a = b;
+  b = c;
+
+  cout << "O valor de A é " << a << endl;
+  cout << "E o valor de B é " << b << endl;
   return 0;
 }
